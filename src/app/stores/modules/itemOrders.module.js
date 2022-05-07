@@ -43,7 +43,6 @@ const itemOrderModule = {
       }
       const obj = []
       const newData = data.sort((a, b) => a.type.localeCompare(b.type))
-      console.log('data', newData)
       data.map(el => {
         chartData.labels.push(el.type)
         obj.push(Number(el.sum))

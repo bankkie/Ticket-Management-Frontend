@@ -8,5 +8,7 @@ const rest = axios.create({
 
 const get = rest.get
 const post = rest.post
+const put = rest.put
+const patch = rest.patch
 
-export { get, post }
+export { get, post, put, patch }

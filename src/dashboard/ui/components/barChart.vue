@@ -67,21 +67,12 @@ export default {
     return {
       chartOptions: {
         responsive: true
-      }
+      },
     }
   },
   mounted () {
   },
   methods: {
-    setupChartData() {
-      // this.sumOrders.map(el => {
-      //   this.chartData.labels.push(el.type)
-      //   this.chartData.datasets[0].data.push(Number(el.sum))
-      // })
-      this.chartData.labels[0] = 'Z'
-      this.chartData.datasets.push({data:[10]})
-      // console.log(this.chartData);
-    }
-  }
+  },
 }
 </script>   

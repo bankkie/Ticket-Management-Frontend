@@ -8,6 +8,12 @@ const ticketModule = {
     async getTicket ({ state, commit, rootState }) {
       const result = await ServiceApi.getTickets()
       commit('SET_TICKETS', result)
+    },
+    async createTicketType ({ state, commit }, payload) {
+      await ServiceApi.createTicketType(payload)
+    },
+    async updateTicketType ({ state, commit }, payload) {
+      await ServiceApi.updateTicketType(payload)
     }
   },
   mutations: {

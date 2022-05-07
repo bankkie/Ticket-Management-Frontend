@@ -4,6 +4,7 @@ import CheckStatus from '../ui/pages/checkStatus.vue'
 import AdminLayout from '../ui/layout/adminLayout.vue'
 import Report from '../../report/ui/pages/report.vue'
 import Dashboard from '../../dashboard/ui/pages/dashboard.vue'
+import ManageTicket from '../../manage/ui/pages/manageTicket.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,10 @@ const routes = [
       {
         path: '/dashboard',
         component: Dashboard
+      },
+      {
+        path: '/manage',
+        component: ManageTicket
       }
     ]
   }

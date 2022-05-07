@@ -60,7 +60,8 @@ export default {
         return {
             navigation: [ {name:'Check Status', href:'/',icon:'',current:true}, 
                           {name:'Report', href:'/report',icon:'',current:true},
-                          {name:'Dashboard', href:'/dashboard',icon:'',current:true}
+                          {name:'Dashboard', href:'/dashboard',icon:'',current:true},
+                          {name:'Manage', href:'/manage',icon:'',current:true}
                         ]
         }
     }

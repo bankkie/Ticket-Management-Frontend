@@ -1,4 +1,4 @@
-import { get } from '../network/httpSession'
+import { get, post, patch } from '../network/httpSession'
 class ServiceApi {
   async getTickets () {
     try {
@@ -51,6 +51,24 @@ class ServiceApi {
     try {
       const result = await get('/item-order')
       return result.data.data
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  async createTicketType (ticket) {
+    try {
+      const result = await post('/ticket-type', ticket)
+      return result
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  async updateTicketType (ticket) {
+    try {
+      const result = await patch('/ticket-type/' + ticket.id, ticket)
+      return result
     } catch (error) {
       console.error(error)
     }
